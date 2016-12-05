@@ -1,0 +1,51 @@
+<h1 class='red-text center'>Ajax Shop</h1>
+<br />
+
+<form id='add-product-form' method='POST' action='api/v1/products'>
+  <div class='row container'>
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Product Name</h5></label>
+      <input id='product-name' type='text' name='product[name]' required />
+    </div>
+
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Product Summary</h5></label>
+      <input id='product-description' type='text' name='product[description]' />
+    </div>
+
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Product Color</h5></label>
+      <input id='product-color' type='text' name='product[color]' />
+    </div>
+
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Product Base Price</h5></label>
+      <input id='product-base-price' type='integer' name='product[base_price]' />
+    </div>
+
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Product Quantity</h5></label>
+      <input id='product-quanity' type='integer' name='product[quanity_on_hand]' />
+    </div>
+
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Product Weight</h5></label>
+      <input id='product-weight' type='integer' name='product[weight]' />
+    </div>
+    
+    <div class='col s4'>
+      <label class='yellow-text'><h5>Other Attributes</h5></label>
+      <input id="product-other-attributes" type="text" name='product[other_attributes]'/>
+    </div>
+  </div>
+    <br />
+  <div class='col s12 center'>
+    <input type='submit' class='btn orange black-text' />
+  </div>
+</form>
+<br />
+<!-- <div class='center'> -->
+  <h3>List of Products</h3>
+  <button id='show-products' type='button' class='btn light-green black-text'>Show Products</button>
+  <div class='row' id='products'></div>
+<!-- </div> -->
